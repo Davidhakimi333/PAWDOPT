@@ -1,0 +1,163 @@
+/* === General Page Style === */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #d1d8d1; /* light green-gray background */
+}
+
+/* === Top Navigation Bar === */
+.navbar {
+  background-color: #f6f6f6;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Logo styling */
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Navigation links */
+.navbar nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Highlight the current/active page */
+.navbar nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Search bar input styling */
+.search-bar input {
+  padding: 0.4rem;
+  font-size: 1rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+/* === Main Section === */
+main {
+  padding: 2rem;
+}
+
+/* Section heading */
+.section-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Flex layout for the 3 help option cards */
+.help-options {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Each help option card */
+.help-card {
+  background-color: #f0f4f8;
+  padding: 1rem;
+  flex: 1;
+  min-width: 250px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+/* Paragraph inside card */
+.help-card p {
+  margin-bottom: 1rem;
+}
+
+/* Button/image in each card */
+.help-card img {
+  max-width: 80%;
+  height: auto;
+}
+
+/* === Footer === */
+footer {
+  background-color: #3b3b3b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Left part of footer */
+.footer-left {
+  max-width: 30%;
+}
+
+.footer-left .logo-footer {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Simple icons as placeholders */
+.footer-left .socials a {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+/* Right part of footer */
+.footer-right {
+  max-width: 65%;
+}
+
+/* Newsletter signup field and button */
+.newsletter {
+  margin-bottom: 1rem;
+}
+
+.newsletter input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  width: 60%;
+  margin-right: 0.5rem;
+}
+
+.newsletter button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #aaa;
+  color: white;
+  border-radius: 4px;
+}
+
+/* Footer links section layout */
+.footer-links {
+  display: flex;
+  gap: 3rem;
+}
+
+/* Link category headings */
+.footer-links h4 {
+  margin-bottom: 0.5rem;
+}
+
+/* Remove bullets from lists */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Footer link styles */
+.footer-links li a {
+  text-decoration: none;
+  color: #ccc;
+  display: block;
+  margin: 0.3rem 0;
+}
