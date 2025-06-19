@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pawdopt</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header with logo, navigation and a button -->
+    <nav>
+      <img src="Zeichenfläche 8.svg" alt="Pawdopt Logo" class="logo" />
+      <ul class="menu">
+        <li><a href="">Our Dogs</a></li>
+        <li><a href="">Q&A</a></li>
+        <li><a href="">How to Help?</a></li>
+      </ul>
+      <div class="search">
+        <form>
+          <input type="text" placeholder="Search..." />
+          <button type="submit">Go</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Hero Image -->
+
+    <div class="dog-banner">
+      <img class="dog-cover" src="image.png" />
+    </div>
+
+    <!-- Tea Filter Buttons -->
+    <section class="tea-filters">
+      <button>Black Tea</button>
+      <button>Green Tea</button>
+      <button>Rooibos Tea</button>
+      <button>White Tea</button>
+    </section>
+
+    <!-- Main Content -->
+    <main style="display: flex; padding: 2rem; gap: 2rem">
+      <!-- Filter Sidebar -->
+      <aside style="width: 200px">
+        <h3>Filter</h3>
+        <details>
+          <summary>Appearance</summary>
+        </details>
+        <details>
+          <summary>Personality</summary>
+        </details>
+        <details>
+          <summary>What type?</summary>
+          <label><input type="checkbox" /> Family</label><br />
+          <label><input type="checkbox" /> Guard</label><br />
+          <label><input type="checkbox" /> Senior friendly</label>
+        </details>
+        <details>
+          <summary>Location</summary>
+        </details>
+      </aside>
+
+      <!-- Dog Cards -->
+      <section
+        class="dog-list"
+        style="
+          flex: 1;
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+          gap: 1rem;
+        "
+      >
+        <div class="dog-card">
+          <img src="adopt3.jpg" alt="Lea" />
+          <h4>Lea</h4>
+          <p>Smart</p>
+          <p>Sporty</p>
+          <p>Fun</p>
+          <a href="#" class="dog-card-button">Adopt me</a>
+        </div>
+        <div class="dog-card">
+          <img src="adopt4.jpeg" alt="Minny" />
+          <h4>Minis</h4>
+          <p>Smart</p>
+          <p>Sporty</p>
+          <p>Fun</p>
+          <a href="#" class="dog-card-button">Adopt me</a>
+        </div>
+        <div class="dog-card">
+          <img src="adopt5.jpg" alt="Rikis" />
+          <h4>Rikis</h4>
+          <p>Smart</p>
+          <p>Sporty</p>
+          <p>Fun</p>
+          <a href="#" class="dog-card-button">Adopt me</a>
+        </div>
+        <div class="dog-card">
+          <img src="adopt6.jpeg" alt="Francis" />
+          <h4>Francis</h4>
+          <p>Smart</p>
+          <p>Sporty</p>
+          <p>Fun</p>
+          <a href="#" class="dog-card-button">Adopt me</a>
+        </div>
+        <!-- Platzhalter -->
+        <div class="dog-card">
+          <img src="adopt5.jpg" alt="Forta" />
+          <h4>Forta</h4>
+          <p>Loyal</p>
+          <p>Playful</p>
+          <p>Loving</p>
+          <a href="#" class="dog-card-button">Adopt me</a>
+        </div>
+
+        <div class="dog-card">
+          <img src="adopt6.jpeg" alt="Pilky" />
+
+          <h4>Pilky</h4>
+          <p>Cute</p>
+          <p>Loving</p>
+          <a href="#" class="dog-card-button">Adopt me</a>
+        </div>
+
+        <div class="dog-card">
+          <img src="adopt6.jpeg" alt="Tubi" />
+          <h4>Happy</h4>
+          <p>Trusful</p>
+          <p>Adorable</p>
+          <a href="#" class="dog-card-button">Adopt me</a>
+        </div>
+
+        <div class="dog-card">
+          <img src="adopt1.jpg" alt="Juna" />
+          <h4>Fun</h4>
+          <p>Loving</p>
+          <p>Playful</p>
+          <a href="#" class="dog-card-button">Adopt me</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Dogs of the Month -->
+    <section class="dog-month-section">
+      <h2>Dogs of the month</h2>
+      <p>Our monthly stars — full of charm and love.</p>
+      <div class="dog-month-container">
+        <div class="dog-month-card">
+          <img src="adopt1.jpg" alt="Neo" />
+          <h4>Neo</h4>
+          <p>
+            “Hi! I’m Neo — I love belly rubs, and following you everywhere. I’m
+            learning fast and ready to grow up in a loving home!”
+          </p>
+        </div>
+        <div class="dog-month-card">
+          <img src="adopt2.jpg" alt="Garry" />
+          <h4>Garry</h4>
+          <p>
+            “Hi, I’m Garry! I’ve been waiting patiently for my forever family —
+            could it be you?”
+          </p>
+        </div>
+
+        <div class="dog-month-card">
+          <img src="adopt1.jpg" alt="Neo" />
+          <h4>Neo</h4>
+          <p>
+            “Hi! I’m Neo — I love belly rubs, and following you everywhere. I’m
+            learning fast and ready to grow up in a loving home!”
+          </p>
+        </div>
+        <div class="dog-month-container">
+        <div class="dog-month-card">
+          <img src="adopt1.jpg" alt="Neo" />
+          <h4>Neo</h4>
+          <p>
+            “Hi! I’m Neo — I love belly rubs, and following you everywhere. I’m
+            learning fast and ready to grow up in a loving home!”
+          </p>
+        </div>
+        <div class="dog-month-container">
+        <div class="dog-month-card">
+          <img src="adopt1.jpg" alt="Neo" />
+          <h4>Neo</h4>
+          <p>
+            “Hi! I’m Neo — I love belly rubs, and following you everywhere. I’m
+            learning fast and ready to grow up in a loving home!”
+          </p>
+        </div>
+
+        <div class="arrow-right">›</div>
+      </div>
+    </section>
+
+    <!-- Footer with two columns -->
+    <footer>
+      <div class="footer-columns">
+        <div class="footer-info">
+          <img src="logo_footer.svg" alt="Pawdopt Logo" class="logo" />
+          <p>Rescue. Rehabilitate. Rehome.</p>
+          <p>© 2025 Pawdopt</p>
+        </div>
+        <div class="footer-interact">
+          <div class="footer-subscribe">
+            <p><strong>Want to get our updates?</strong></p>
+            <form>
+              <input
+                class="subscribe-email"
+                type="email"
+                placeholder="Your email"
+              />
+
+              <button class="subscribe-button">Subscribe now</button>
+            </form>
+          </div>
+          <div class="footer-menu">
+            <ul class="menu">
+              <li><a href="#Contact">Contact</a></li>
+              <li><a href="#Imprint">Imprint</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
