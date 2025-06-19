@@ -1,0 +1,228 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #fefefe;
+  color: #333;
+}
+
+/* Header styles */
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #e6e6e6;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 10px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #798F73;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.logo {
+    height: 60px; 
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3em;
+  color: black;
+  padding: 10px;
+}
+
+/* About section */
+.about {
+  background-color: #DAC2B2;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.about img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Dogs section */
+.dogs-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.dogs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.dog {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 250px;
+  background-color: #D0D9D4;
+  border-radius: 8px;
+}
+
+.dog img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Quote section */
+.quote {
+  background-color: #798F73;
+  padding: 40px 20px;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonial-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.testimonial {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 250px;
+  background-color: #DAC2B2;
+  border-radius: 8px;
+}
+
+.testimonial img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.footer-columns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-columns div {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+}
+
+input {
+  font-size: 16px;
+  padding: 12px 10px;
+  height: 28px;
+  width: 250px;
+  border-radius: 4px;
+}
+
+.footer-text p:not(:last-child) {
+  margin-bottom: 10px; /* Abstand nur zwischen den beiden Textzeilen */
+}
+
+
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;          /* puts list items in a row */
+  gap: 70px;              /* optional spacing between items */
+}
+
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a {
+  color: inherit;          /* link uses surrounding text color */
+  text-decoration: none;  /* removes underline */
+}
+
+a:visited {
+  color: inherit;          /* no purple color for visited links */
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: inherit;          /* keeps same color on hover/click */
+  text-decoration: none;   /* still no underline */
+}

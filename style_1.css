@@ -1,0 +1,353 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #fefefe;
+  color: #333;
+}
+
+/* Header styles */
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #e6e6e6;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 10px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #798F73;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.logo {
+    height: 60px; 
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* Breadcrumb styles */
+.breadcrumb {
+  background: #e7ddd8;
+  font-size: 0.95em;
+  padding-left: 45px; 
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumb a {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb-separator {
+  color: #888;
+  font-size: 1.1em;
+}
+
+.breadcrumb .current {
+  color: #694f0c;
+  font-weight: 500;
+  cursor: default;
+  text-decoration: underline;
+}
+
+/*About the dog container*/
+#about-dog .container {
+  margin: 0 auto;
+  padding: 30px;
+  padding-top: 0px;
+  background: #e7ddd8;
+}
+
+/*the whole information box*/
+#about-dog .row {
+  display: flex;
+  align-items: stretch; 
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Align vertically */     
+}
+
+/* Image column */
+#about-dog .col-sm-6:first-child {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-dog .col-sm-6 img.positioned-image {
+  width: 740px;              
+  height: auto;   
+}
+
+/* box for starts and description */
+.dog-info-row {
+  display: flex;
+  gap: 32px;
+  margin: 1.2em 0;
+  background: #d6c4b8;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  margin-bottom: 1.2em;
+  align-items: center;   /* Vertically align centers */
+  justify-content: left; /* Center both blocks horizontally (optional) */
+  gap: 50px;
+  max-width: 600px; 
+}
+
+/* description text*/
+.dog-details {
+  display: block;
+}
+
+
+#about-dog .col-sm-6.dog-info {
+  flex: 1 1 0;
+  padding: 32px 40px 32px 40px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 400px;
+  text-align: left;
+}
+
+#about-dog h1 {
+  font-size: 50px;
+  margin-bottom: 8px;
+}
+
+#about-dog h3 {
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
+}
+
+#about-dog .subtitle {
+  font-size: 1.1em;
+  color: #444;
+  margin-bottom: 1em;
+}
+
+#about-dog .divider {
+  color: #aaa;
+  margin: 0 8px;
+}
+
+#about-dog .dog-details {
+  margin: 1.2em 0;
+  padding: 0;
+  list-style: none;
+  background: transparent; 
+}
+
+#about-dog .dog-details li {
+  margin-bottom: 0.3em;
+}
+
+
+#about-dog .traits-box {
+  background: #e6dcd2;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin: 16px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  width: 320px;
+  display: block;
+}
+
+
+/*2 buttons*/
+.dog-buttons {
+  display: flex;
+  gap: 12px;
+  margin: 1em 0;
+}
+
+.dog-info-box {
+  background: #d6c4b8;
+  color: #333;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1em;
+}
+
+#about-dog .interest-btn {
+  background: #798F73;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  padding: 12px 40px;
+  font-size: 1.2em;
+  margin: 18px 0;
+  cursor: pointer;
+  box-shadow: 0 8px 40px rgba(171, 197, 164, 0.222);
+   width: 377px;
+}
+
+@media (max-width: 900px) {
+  #about-dog .row {
+    flex-direction: column;
+    gap: 0;
+  }
+  #about-dog .col-sm-6 {
+    min-width: 0;
+    padding: 16px 0;
+  }
+  #about-dog .traits-box {
+    width: 100%;
+  }
+}
+
+/* Dogs section */
+.cards {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+
+.dogs {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.dog {
+  border: 1px solid #ccc;
+  padding: 30px;
+  width: 280px;
+  background-color: #D0D9D4;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.dog img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.my-btn {
+  padding: 10px 20px;
+  background-color: #798F73;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  align-items: center;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex; 
+  flex-wrap: wrap;
+  align-items: flex-start;
+ }
+
+
+.footer-columns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-columns div {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+}
+
+input {
+  font-size: 16px;
+  padding: 12px 10px;
+  height: 28px;
+  width: 250px;
+  border-radius: 4px;
+}
+
+.footer-text p:not(:last-child) {
+  margin-bottom: 10px; /* Abstand nur zwischen den beiden Textzeilen */
+}
+
+
+/*contact & imprint*/
+ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;          /* puts list items in a row */
+  gap: 70px;              /* optional spacing between items */
+}
+
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a {
+  color: inherit;          /* link uses surrounding text color */
+  text-decoration: none;  /* removes underline */
+}
+
+a:visited {
+  color: inherit;          /* no purple color for visited links */
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: inherit;          /* keeps same color on hover/click */
+  text-decoration: none;   /* still no underline */
+}
+
