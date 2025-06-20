@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Filter Panel</title>
+
+  <!-- This line tells the browser to load the CSS file for styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Main container for all filter sections -->
+<div class="filter-panel">
+
+  <!-- === Filter group: Appearance === -->
+  <div class="accordion">
+    <!-- This is a button that opens/closes the section -->
+    <button class="accordion-header">
+      Appearance
+      <!-- This arrow shows the open/closed state -->
+      <span class="arrow">▼</span>
+    </button>
+
+    <!-- This is the hidden part that appears when opened -->
+    <div class="accordion-body">
+
+      <!-- Subfilter: Size -->
+      <div class="accordion-sub">
+        <button class="accordion-header small">
+          Size <span class="arrow">▼</span>
+        </button>
+        <div class="accordion-body">
+          <!-- Checkboxes inside "Size" -->
+          <label><input type="checkbox"> Small</label>
+          <label><input type="checkbox"> Medium</label>
+          <label><input type="checkbox"> Large</label>
+        </div>
+      </div>
+
+      <!-- Subfilter: Coat Texture -->
+      <div class="accordion-sub">
+        <button class="accordion-header small">
+          Coat Texture <span class="arrow">▼</span>
+        </button>
+        <div class="accordion-body">
+          <label><input type="checkbox"> Smooth</label>
+          <label><input type="checkbox"> Rough</label>
+        </div>
+      </div>
+
+      <!-- Subfilter: Color -->
+      <div class="accordion-sub">
+        <button class="accordion-header small">
+          Color <span class="arrow">▼</span>
+        </button>
+        <div class="accordion-body">
+          <label><input type="checkbox"> Black</label>
+          <label><input type="checkbox"> White</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- === Filter group: Breed === -->
+  <div class="accordion">
+    <button class="accordion-header">Breed <span class="arrow">▼</span></button>
+    <div class="accordion-body">
+      <label><input type="checkbox"> Purebred</label>
+      <label><input type="checkbox"> Mixed</label>
+    </div>
+  </div>
+
+  <!-- === Filter group: What type? === -->
+  <div class="accordion">
+    <button class="accordion-header">What type? <span class="arrow">▼</span></button>
+    <div class="accordion-body">
+      <!-- Checkboxes with different dog types -->
+      <label><input type="checkbox" class="family"> <span class="red-text">Family</span></label>
+      <label><input type="checkbox"> Guard</label>
+      <label><input type="checkbox"> Senior friendly</label>
+      <label><input type="checkbox"> Kid-Friendly</label>
+      <label><input type="checkbox"> Emergency</label>
+      <label><input type="checkbox"> Good with Other Pets</label>
+      <label><input type="checkbox"> Dogs with a Story (old ones)</label>
+    </div>
+  </div>
+
+  <!-- === Filter group: Personality === -->
+  <div class="accordion">
+    <button class="accordion-header">Personality <span class="arrow">▼</span></button>
+    <div class="accordion-body">
+      <label><input type="checkbox"> Energetic</label>
+      <label><input type="checkbox"> Calm</label>
+      <label><input type="checkbox"> Social</label>
+      <label><input type="checkbox"> Independent</label>
+    </div>
+  </div>
+
+</div>
+
+<!-- JavaScript: This code makes the accordion open/close when clicked -->
+<script>
+  // For every header (e.g. Appearance, Breed...)
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+      // Find the next element (the body that should open/close)
+      const body = header.nextElementSibling;
+
+      // Toggle class 'active' to show or hide it
+      if (body) body.classList.toggle('active');
+
+      // Rotate the arrow (visual feedback)
+      const arrow = header.querySelector('.arrow');
+      if (arrow) arrow.classList.toggle('rotate');
+    });
+  });
+</script>
+
+</body>
+</html>
